@@ -30,6 +30,13 @@
 #' - `end`: The last year of the homogeneous subperiod.
 #' - Additional items specific to the the submodule.
 #'
+#' @examples
+#' # Get data for the BOW RIVER AT BANFF (05BB001)
+#' df <- data_local("CAN-05BB001.csv")
+#'
+#' # Run the complete FFA framework (takes several minutes)
+#' \dontrun{framework_full(df$max, df$year)}
+#'
 #' @seealso [framework_eda()], [framework_ffa()]
 #'
 #' @importFrom jsonlite write_json
@@ -57,8 +64,8 @@ framework_full <- function(
 	img_dir <- setup$img_dir
 
 	# Get the results of EDA and FFA
-	eda <- framework_eda(data, years, ns_splits, FALSE)
-	ffa <- framework_ffa(data, years, ns_splits, ns_structures, FALSE)
+	eda <- framework_eda(data, years, ns_splits, FALSE, report_path)
+	ffa <- framework_ffa(data, years, ns_splits, ns_structures, FALSE, report_path)
 
 	# Combine the results of EDA and FFA into a single list
 	results <- list(
