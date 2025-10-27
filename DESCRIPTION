@@ -9,7 +9,7 @@ Description: Tools to support systematic and reproducible workflows for both
 	funded by the Flood Hazard Identification and Mapping Program of Environment
 	and Climate Change Canada, as well as the Canada Research Chair (Tier 1)
 	awarded to Dr. Pietroniro.
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: 
     c(person(
         "Riley",
@@ -52,7 +52,7 @@ RoxygenNote: 7.3.2
 Config/Needs/website: rmarkdown
 Language: en-US
 NeedsCompilation: no
-Packaged: 2025-08-29 03:24:29 UTC; rileywheadon
+Packaged: 2025-10-26 22:05:06 UTC; rileywheadon
 Author: Riley Wheadon [aut, cre],
   Cuauhtémoc Vidrio-Sahagún [aut],
   Alain Pietroniro [aut, fnd],
@@ -60,4 +60,4 @@ Author: Riley Wheadon [aut, cre],
   Environment and Climate Change Canada (ECCC) [fnd]
 Maintainer: Riley Wheadon <rileywheadon@gmail.com>
 Repository: CRAN
-Date/Publication: 2025-08-29 08:40:23 UTC
+Date/Publication: 2025-10-27 07:50:02 UTC
